@@ -1,3 +1,3 @@
 (function() {
-emailjs.init("EMAILNEWS");
+emailjs.init("user_hI6S08d1aK1XKKU2VWtOI");
 })();
