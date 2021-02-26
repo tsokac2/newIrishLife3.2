@@ -25,7 +25,7 @@
                                     {{ form.hidden_tag() }}
                                     <div class="input-group">
                                         <span><i class="fas fa-align-justify"></i></span>
-                                        {{ form.tip_category(class="userInput", required="required") }}
+                                        {{ form.tip_category(class="userInput", value="") }}
                                         {% if form.tip_category.errors %}
                                         <div class="invalid-feedback-error">
                                             {% for error in form.tip_category.errors %}
