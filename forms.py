@@ -57,7 +57,7 @@ class LoginForm(FlaskForm):
     submit = SubmitField("LOGIN")
 
 class AddTip(FlaskForm):
-    tip_category = SelectField("tip_category", choices=["Select a category", "Trip", "Work", "Study", "Food"], 
+    tip_category = SelectField('tip_category', choices=["Trip", "Work", "Study", "Food"], 
                                 validators=[DataRequired("Select a category")])
 
     tip_title = StringField("tip_title", validators=[DataRequired("Enter a tip title"), 

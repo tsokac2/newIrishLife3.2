@@ -128,7 +128,7 @@ def add_tip():
         return redirect(url_for("tips"))
 
     categories = mongo.db.categories.find().sort("tip_category", 1)
-    return render_template("add_tip.html", title="| Add Tip", form=form)
+    return render_template("add_tip.html", title="| Add Tip", form=form, categories=categories)
 
 
 @app.route("/update_tip/<tip_id>", methods=["GET", "POST"])
