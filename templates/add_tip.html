@@ -25,14 +25,12 @@
                                     {{ form.hidden_tag() }}
                                     <div class="input-group">
                                         <span><i class="fas fa-align-justify"></i></span>
-                                        {{ form.tip_category(size="1", class="userInput") }}
-                                        {% if form.tip_category.errors %}
-                                        <div class="invalid-feedback-error">
-                                            {% for error in form.tip_category.errors %}
-                                            <small>{{ error }}</small>
+                                        <select id="tip_category" name="tip_category" class="userInput" required>
+                                            <option value="" disabled selected>Choose Category</option>
+                                            {% for category in categories %}
+                                                <option value="{{ category.tip_category }}">{{ category.tip_category }}</option>
                                             {% endfor %}
-                                        </div> 
-                                        {% endif %}
+                                        </select>
                                     </div>
                                     <div class="input-group">
                                         <span><i class="fas fa-heading"></i></span>
