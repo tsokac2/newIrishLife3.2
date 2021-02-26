@@ -1706,7 +1706,6 @@ body {
     .nav-mobile {
       top: 21rem; } }
   .nav-mobile .wrap {
-    border:1px solid #c9c9c9;
     background-color: #0f6367;
     padding-bottom:0.5rem; }
     .nav-mobile .wrap--s {
