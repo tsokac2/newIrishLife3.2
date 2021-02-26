@@ -58,7 +58,8 @@ class LoginForm(FlaskForm):
 
 class AddTip(FlaskForm):
     tip_category = SelectField("tip_category", choices=["Select a category", "Trip", "Work", "Study", "Food"], 
-                                validators=[DataRequired("Select a category")])
+                                validators=[DataRequired("Select a category")],
+                                render_kw={"placeholder": "Select a category"})
 
     tip_title = StringField("tip_title", validators=[DataRequired("Enter a tip title"), 
                                 Length(min=5, message="Must be more that 5 character!"),
