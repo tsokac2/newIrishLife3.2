@@ -180,7 +180,7 @@ body {
           display: none; } }
       @media (min-width: 360px) {
         .section-home .intro-pitch .pitch-wrap .composition {
-          margin-top:  2rem;
+          margin-top:2rem;
           display: block; } }
       .section-home .intro-pitch .pitch-wrap .composition .comp-photo {
         width: 50%;
@@ -1706,7 +1706,7 @@ body {
     .nav-mobile {
       top: 21rem; } }
   .nav-mobile .wrap {
-    border:  1px solid  rgba(201, 201, 201, 0.5);
+    border:1px solid rgba(201, 201, 201, 0.5);
     background-color: #0f6367;
     padding-bottom: .5rem; }
     .nav-mobile .wrap--s {
