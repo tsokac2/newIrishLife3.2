@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*--- COLOR VARIABLES ---*/
+/*--- FONT FAMILY VARIABLES ---*/
+/*--- BREAKING POINTS ---*/
 * {
   margin: 0;
   padding: 0; }
@@ -177,7 +180,7 @@ body {
           display: none; } }
       @media (min-width: 360px) {
         .section-home .intro-pitch .pitch-wrap .composition {
-          margin-top:2rem;
+          margin-top:  2rem;
           display: block; } }
       .section-home .intro-pitch .pitch-wrap .composition .comp-photo {
         width: 50%;
@@ -1307,7 +1310,7 @@ body {
       background: rgba(217, 83, 79, 0.5); }
 
 #style-3::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(5, 65, 68, 0.6);
+  -webkit-box-shadow: inset 0 0 6px rgba(5, 65, 68, 0.6);
   background-color: #F5F5F5; }
 
 #style-3::-webkit-scrollbar {
@@ -1703,7 +1706,7 @@ body {
     .nav-mobile {
       top: 21rem; } }
   .nav-mobile .wrap {
-    border:1px solid rgba(201, 201, 201, 0.5);
+    border:  1px solid  rgba(201, 201, 201, 0.5);
     background-color: #0f6367;
     padding-bottom: .5rem; }
     .nav-mobile .wrap--s {
