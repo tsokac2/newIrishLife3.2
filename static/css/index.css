@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*--- COLOR VARIABLES ---*/
+/*--- FONT FAMILY VARIABLES ---*/
+/*--- BREAKING POINTS ---*/
 * {
   margin: 0;
   padding: 0; }
@@ -1121,6 +1124,79 @@ body {
         width: 25px;
         margin-left: 15px; } }
 
+.serch-tips-wrap {
+  margin-top: 1rem;
+  padding: .5rem 0;
+  background-color: white; }
+  .serch-tips-wrap h2 {
+    color: #054144;
+    font-weight: 700;
+    padding: 0;
+    font-size: 1.5rem; }
+    @media (min-width: 576px) {
+      .serch-tips-wrap h2 {
+        font-size: 2.3rem; } }
+    @media (min-width: 768px) {
+      .serch-tips-wrap h2 {
+        font-size: 2.8rem; } }
+  .serch-tips-wrap .no-results {
+    font-family: inherit;
+    color: #ff5800;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0;
+    margin: .5rem 0; }
+    @media (min-width: 576px) {
+      .serch-tips-wrap .no-results {
+        font-size: 2.3rem; } }
+  .serch-tips-wrap form {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: white;
+    text-align: center; }
+    .serch-tips-wrap form i {
+      font-size: 1.5rem;
+      color: #054144; }
+    .serch-tips-wrap form .search-input {
+      margin: 0 auto;
+      background-color: transparent;
+      font-size: 1rem;
+      border: none;
+      border-bottom: 1px solid #86c1bf;
+      text-indent: 15px;
+      width: 80%;
+      padding: .5rem .5rem;
+      font-size: 1.2rem;
+      resize: none; }
+      @media (min-width: 576px) {
+        .serch-tips-wrap form .search-input {
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) {
+        .serch-tips-wrap form .search-input {
+          font-size: 2rem; } }
+  .serch-tips-wrap .serch-btn, .serch-tips-wrap .reset-btn {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(5, 65, 68, 0.25);
+    display: inline-block;
+    color: #054144;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    border: 1px solid #054144;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s ease; }
+    @media (min-width: 576px) {
+      .serch-tips-wrap .serch-btn, .serch-tips-wrap .reset-btn {
+        font-size: 1.5rem; } }
+    .serch-tips-wrap .serch-btn:hover, .serch-tips-wrap .reset-btn:hover {
+      background-color: #054144;
+      color: white; }
+  .serch-tips-wrap .reset-btn {
+    background: rgba(217, 83, 79, 0.5); }
+
 .tips-card-wrap {
   padding: 1.5rem;
   background-image: linear-gradient(to bottom, white, #acf4f2);
@@ -1136,17 +1212,18 @@ body {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center; }
-    .tips-card-wrap .head-wrap .user-name {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .tips-card-wrap .head-wrap .user-name h3 {
-        font-size: 1.5rem; }
+      .tips-card-wrap .head-wrap .profile-img h3 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1rem;
+        margin-left: 1rem; }
         @media (min-width: 360px) {
-          .tips-card-wrap .head-wrap .user-name h3 {
-            font-size: 2.5rem; } }
-      .tips-card-wrap .head-wrap .user-name h3::first-letter {
+          .tips-card-wrap .head-wrap .profile-img h3 {
+            font-size: 2rem; } }
+        @media (min-width: 576px) {
+          .tips-card-wrap .head-wrap .profile-img h3 {
+            font-size: 2.5rem;
+            margin-left: 2rem; } }
+      .tips-card-wrap .head-wrap .profile-img h3::first-letter {
         text-transform: uppercase; }
     .tips-card-wrap .head-wrap .wrap {
       display: flex;
@@ -1164,6 +1241,7 @@ body {
     width: 100%; }
     .tips-card-wrap .content-wrap h3 {
       color: #1034a6;
+      font-family: "Lato", sans-serif;
       font-weight: bold;
       font-size: 1.3rem; }
       @media (min-width: 360px) {
@@ -1172,15 +1250,29 @@ body {
       @media (min-width: 576px) {
         .tips-card-wrap .content-wrap h3 {
           font-size: 2.2rem; } }
+    .tips-card-wrap .content-wrap h4 {
+      width: 100%;
+      color: #2b2b44;
+      font-weight: bold;
+      font-size: .9rem;
+      font-style: italic; }
+      @media (min-width: 360px) {
+        .tips-card-wrap .content-wrap h4 {
+          font-size: 1.3rem; } }
+      @media (min-width: 360px) {
+        .tips-card-wrap .content-wrap h4 {
+          font-size: 1.6rem; } }
   .tips-card-wrap .post {
     background-color: white;
     width: 100%;
     margin: 1rem 0; }
     .tips-card-wrap .post p {
       font-size: 1.1rem;
+      font-family: 'Nunito', sans-serif;
       padding: 1rem;
       color: #054144;
       border-radius: 5px;
+      line-height: 22px;
       overflow-x: scroll;
       overflow: auto; }
       @media (min-width: 360px) {
@@ -1189,6 +1281,33 @@ body {
       @media (min-width: 576px) {
         .tips-card-wrap .post p {
           font-size: 1.6rem; } }
+  .tips-card-wrap .post-btn-wrap {
+    padding: 1rem 0; }
+    .tips-card-wrap .post-btn-wrap .update-btn, .tips-card-wrap .post-btn-wrap .delete-btn {
+      padding: 0.5rem 1rem;
+      background: rgba(5, 65, 68, 0.25);
+      color: #054144;
+      letter-spacing: 1px;
+      font-weight: 900;
+      font-size: 1.2rem;
+      border: 1px solid #054144;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .5s ease; }
+      @media (min-width: 576px) {
+        .tips-card-wrap .post-btn-wrap .update-btn, .tips-card-wrap .post-btn-wrap .delete-btn {
+          padding: 1rem 3rem;
+          font-size: 1.5rem;
+          margin-bottom: 1rem; } }
+      @media (min-width: 768px) {
+        .tips-card-wrap .post-btn-wrap .update-btn, .tips-card-wrap .post-btn-wrap .delete-btn {
+          font-size: 1.5rem; } }
+      .tips-card-wrap .post-btn-wrap .update-btn:hover, .tips-card-wrap .post-btn-wrap .delete-btn:hover {
+        background-color: #054144;
+        color: white; }
+    .tips-card-wrap .post-btn-wrap .delete-btn {
+      background: rgba(217, 83, 79, 0.5); }
 
 #style-3::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(5, 65, 68, 0.6);
@@ -1200,13 +1319,6 @@ body {
 
 #style-3::-webkit-scrollbar-thumb {
   background-color: #054144; }
-
-.modal-thums-wrap .modal-img {
-  width: 100%; }
-
-.modal-thums-wrap .btn-close {
-  margin-top: 2rem;
-  font-size: 2rem; }
 
 .profile-info {
   font-family: "Lato", sans-serif;
@@ -1250,13 +1362,20 @@ body {
         margin-left: 15px; } }
 
 .profile-details-wrap {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: white; }
   .profile-details-wrap .profile-details {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 1rem; }
+    @media (min-width: 576px) {
+      .profile-details-wrap .profile-details {
+        margin-bottom: 1.5rem; } }
     .profile-details-wrap .profile-details h3 {
-      font-size: 1.5rem;
+      display: inline-block;
+      font-size: 1rem;
       font-weight: bold;
-      font-family: "Lato", sans-serif; }
+      font-family: 'Nunito', sans-serif; }
       @media (min-width: 360px) {
         .profile-details-wrap .profile-details h3 {
           font-size: 1.5rem; } }
@@ -1265,65 +1384,135 @@ body {
           font-size: 2rem; } }
       @media (min-width: 768px) {
         .profile-details-wrap .profile-details h3 {
-          font-size: 2.5rem;
-          margin-top: 1.5rem; } }
-      .profile-details-wrap .profile-details h3 span {
-        font-size: 1.3rem;
-        color: #03506f; }
-        @media (min-width: 360px) {
-          .profile-details-wrap .profile-details h3 span {
-            margin-left: 1rem;
-            font-size: 1.5rem; } }
-        @media (min-width: 576px) {
-          .profile-details-wrap .profile-details h3 span {
-            font-size: 2rem; } }
-        @media (min-width: 576px) {
-          .profile-details-wrap .profile-details h3 span {
-            font-size: 2.2rem; } }
-      .profile-details-wrap .profile-details h3 .username {
-        display: inline-block; }
-      .profile-details-wrap .profile-details h3 .username:first-letter {
-        text-transform: uppercase; }
-      .profile-details-wrap .profile-details h3 .email {
-        font-style: italic;
-        font-size: 1.2rem; }
-        @media (min-width: 360px) {
-          .profile-details-wrap .profile-details h3 .email {
-            font-size: 1.5rem; } }
-        @media (min-width: 576px) {
-          .profile-details-wrap .profile-details h3 .email {
-            font-size: 2rem; } }
-        @media (min-width: 576px) {
-          .profile-details-wrap .profile-details h3 .email {
-            font-size: 2.2rem; } }
-
-.update-form {
-  background-color: white;
-  padding: 2rem 1rem;
-  margin-top: 1.5rem; }
-  .update-form form {
-    margin-top: 2rem; }
-  .update-form h2 {
+          font-size: 2.5rem; } }
+    .profile-details-wrap .profile-details .username {
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      color: #a15202; }
+      @media (min-width: 360px) {
+        .profile-details-wrap .profile-details .username {
+          font-size: 1.5rem; } }
+      @media (min-width: 576px) {
+        .profile-details-wrap .profile-details .username {
+          font-size: 2rem; } }
+      @media (min-width: 768px) {
+        .profile-details-wrap .profile-details .username {
+          font-size: 2.5rem; } }
+    .profile-details-wrap .profile-details .username::first-letter {
+      text-transform: uppercase; }
+    .profile-details-wrap .profile-details .email {
+      display: inline-block;
+      font-style: italic;
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: 'Nunito', sans-serif;
+      color: #a15202; }
+      @media (min-width: 360px) {
+        .profile-details-wrap .profile-details .email {
+          font-size: 1.5rem; } }
+      @media (min-width: 576px) {
+        .profile-details-wrap .profile-details .email {
+          font-size: 2rem; } }
+      @media (min-width: 576px) {
+        .profile-details-wrap .profile-details .email {
+          font-size: 2.2rem; } }
+  .profile-details-wrap i {
+    display: inline;
+    font-size: 1.5rem;
     color: #054144;
+    margin-right: .5rem; }
+    @media (min-width: 360px) {
+      .profile-details-wrap i {
+        font-size: 1.5rem;
+        margin-right: 1.5rem; } }
+    @media (min-width: 576px) {
+      .profile-details-wrap i {
+        font-size: 2.5rem; } }
+  .profile-details-wrap .delete-profile-wrap {
+    padding: 1rem 0; }
+    .profile-details-wrap .delete-profile-wrap h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #054144; }
+      @media (min-width: 576px) {
+        .profile-details-wrap .delete-profile-wrap h2 {
+          font-size: 2rem;
+          margin-bottom: .5rem; } }
+      @media (min-width: 1200px) {
+        .profile-details-wrap .delete-profile-wrap h2 {
+          font-size: 2.5rem; } }
+    .profile-details-wrap .delete-profile-wrap .delete-btn {
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      display: inline-block;
+      background: rgba(217, 83, 79, 0.5);
+      color: #054144;
+      letter-spacing: 1px;
+      font-weight: 900;
+      font-size: 1.2rem;
+      border: 1px solid #054144;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .5s ease; }
+      @media (min-width: 576px) {
+        .profile-details-wrap .delete-profile-wrap .delete-btn {
+          padding: 1rem 3rem;
+          font-size: 1.5rem;
+          margin-bottom: 1rem; } }
+      @media (min-width: 768px) {
+        .profile-details-wrap .delete-profile-wrap .delete-btn {
+          font-size: 1.5rem; } }
+      .profile-details-wrap .delete-profile-wrap .delete-btn:hover {
+        background-color: #054144;
+        color: white; }
+
+.delete-profile-modal {
+  background-color: white; }
+  .delete-profile-modal h2 {
+    font-size: 1.3rem;
     font-weight: 700;
-    padding: 0;
-    text-align: center;
-    font-size: 1.3rem; }
+    color: #054144; }
     @media (min-width: 576px) {
-      .update-form h2 {
-        font-size: 2.3rem; } }
-    @media (min-width: 768px) {
-      .update-form h2 {
-        font-size: 2.8rem; } }
-  .update-form p {
-    padding: 0;
-    margin: .5rem 0;
-    color: #1d2528;
+      .delete-profile-modal h2 {
+        font-size: 2rem;
+        margin-bottom: .5rem; } }
+    @media (min-width: 1200px) {
+      .delete-profile-modal h2 {
+        font-size: 2.5rem; } }
+  .delete-profile-modal .delete-btn, .delete-profile-modal .no-btn {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+    background: rgba(217, 83, 79, 0.5);
+    color: #054144;
+    letter-spacing: 1px;
+    font-weight: 900;
     font-size: 1.2rem;
-    font-weight: 400; }
+    border: 1px solid #054144;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s ease; }
     @media (min-width: 576px) {
-      .update-form p {
-        font-size: 1.7rem; } }
+      .delete-profile-modal .delete-btn, .delete-profile-modal .no-btn {
+        padding: 1rem 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem; } }
+    @media (min-width: 768px) {
+      .delete-profile-modal .delete-btn, .delete-profile-modal .no-btn {
+        font-size: 1.5rem; } }
+    .delete-profile-modal .delete-btn:hover, .delete-profile-modal .no-btn:hover {
+      background: #d9534f;
+      color: white; }
+  .delete-profile-modal .no-btn {
+    background: rgba(5, 65, 68, 0.5);
+    margin-left: 1rem; }
+    .delete-profile-modal .no-btn:hover {
+      background-color: #054144;
+      color: white; }
 
 .main-nav-wrap {
   background-image: linear-gradient(to bottom, white, #acf4f2); }
@@ -1568,6 +1757,8 @@ body {
         background-image: url(../images/add_tip.png); }
       .nav-mobile .wrap .link .logout {
         background-image: url(../images/logout_icon.png); }
+      .nav-mobile .wrap .link .profile {
+        background-image: url(../images/profile.png); }
 
 .nav-padding {
   padding: 0; }
@@ -1703,15 +1894,6 @@ body {
 @media (min-width: 576px) {
   .remeber-check-box {
     margin-top: .3rem; } }
-
-.remeber-text {
-  margin-left: 1rem;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #054144; }
-  @media (min-width: 576px) {
-    .remeber-text {
-      font-size: 1.5rem; } }
 
 .box-wrap {
   display: flex;
@@ -1876,30 +2058,29 @@ body {
   font-size: 1.5rem; }
 
 .flash-success {
-  padding: 0 0 1rem 0;
-  border-bottom: 1px solid rgba(5, 65, 68, 0.5);
-  margin-bottom: 2rem; }
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 5px;
+  border: 2px solid #087829; }
   .flash-success h2 {
     font-family: inherit;
-    color: #52c41a;
+    color: #087829;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0;
-    margin: 1rem 0; }
+    margin: .5rem 0; }
     @media (min-width: 576px) {
       .flash-success h2 {
         font-size: 2.3rem; } }
-    .flash-success h2 span {
-      color: #14574e; }
 
 .flash-danger {
-  padding: 0 0 1rem 0;
-  border-bottom: 1px solid rgba(5, 65, 68, 0.5);
-  margin-bottom: 2rem; }
+  padding: .5rem;
+  margin-bottom: 1.5rem; }
   .flash-danger h2 {
     font-family: inherit;
     color: #ff0505;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     padding: 0;
     margin: 1rem 0; }
@@ -1908,31 +2089,32 @@ body {
         font-size: 2.3rem; } }
 
 .flash-warning {
-  padding: 0 0 1rem 0;
-  border-bottom: 1px solid rgba(5, 65, 68, 0.5);
-  margin-bottom: 2rem; }
+  padding: .5rem;
+  margin-bottom: 1.5rem; }
   .flash-warning h2 {
     font-family: inherit;
     color: #ff5800;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     padding: 0;
-    margin: 1rem 0; }
+    margin: .5rem 0; }
     @media (min-width: 576px) {
       .flash-warning h2 {
         font-size: 2.3rem; } }
 
 .flash-info {
-  padding: 0 0 1rem 0;
-  border-bottom: 1px solid rgba(5, 65, 68, 0.5);
-  margin-bottom: 1rem; }
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.856);
+  border-radius: 5px;
+  border: 2px solid #087829; }
   .flash-info h2 {
     font-family: inherit;
     color: #0069cc;
     font-size: 1.5rem;
     font-weight: 700;
     padding: 0;
-    margin: 1rem 0; }
+    margin: .5rem 0; }
     @media (min-width: 576px) {
       .flash-info h2 {
         font-size: 2.3rem; } }

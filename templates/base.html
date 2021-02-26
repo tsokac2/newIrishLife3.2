@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Nunito:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8a0926547.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" type="text/css">
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
@@ -35,13 +37,7 @@
                     <a href="{{ url_for('home')}}"><img src="{{ url_for('static', filename='images/Logo.png')}}" width="100" alt="New Irish Logo"></a>
                 </div>
                 <div class="col right">
-                    <div class="row justify-content-between">
-                        <div class="col-5 text-left search-wrap">
-                            <form onsubmit="return false;">
-                                <span><i class="fas fa-search"></i></span>
-                                <input type="search" id="search" placeholder="Search">
-                            </form>
-                        </div>
+                    <div class="row justify-content-end">
                         <div class="col-7 text-left side-btns p-0">
                             {% if session.user %}
                                 <a href="{{ url_for('add_tip')}}"><i class="fas fa-plus"></i></i>Tips</a>
@@ -81,14 +77,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="row justify-content-center">
-                <div class="col-8 col-sm-6 mobile-nav-search">
-                    <form>
-                        <span><i class="fas fa-search"></i></span>
-                        <input type="search" name="search" id="search" placeholder="Search">  
-                    </form>
-                </div>
-                
+            <div class="row justify-content-end">  
                 <div class="col-4 p-0 menu-btn-wrap">
                     <button data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -139,7 +128,13 @@
                         <span>Add Tip</span>
                     </a>
                 </div>
-                <div class="wrap wrap--s">
+                <div class="wrap wrap">
+                    <a href="{{ url_for('profile', username=session['user'])}}" class="link">
+                        <span class="icons profile"></span>
+                        <span>Profile</span>
+                    </a>
+                </div>
+                <div class="wrap wrap">
                     <a href="{{ url_for('logout')}}" class="link">
                         <span class="icons logout"></span>
                         <span>Logout</span>
@@ -240,17 +235,16 @@
         <div class="col-12">
             <div class="row justify-content-center ">
                 <div class="col-12 col-sm-6 text-center copy-ts">
-                    <p><strong>&#169; NewIrishLife 2020</strong> | All rights reserved</p>
+                    <p><strong>&#169; NewIrishLife 2021</strong> | All rights reserved</p>
                 </div>
                 <div class="col-12 col-sm-6 text-center copy-ts">
-                    <p>Design by <a href="http://www.tomislavsokac.com/home"
+                    <p>Created by <a href="http://www.tomislavsokac.com/home"
                             target="_blank"><strong>www.tomislavsokac.com</strong></a></p>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='libraries/bootstrap/bootstrap.min.js') }}"></script>
