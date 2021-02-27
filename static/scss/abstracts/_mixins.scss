@@ -1,4 +1,3 @@
-/*--- BREAKING POINTS ---*/
 @mixin response($breakpoint) {
     @if($breakpoint == xxl) {
         @media(min-width: 1500px) {

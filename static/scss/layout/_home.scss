@@ -77,7 +77,7 @@
             .composition {
                 @include response(xxs-max) {display: none;}
                 @include response(xxs) {display: none;}
-                @include response(xs) { margin-top:2rem; display: block;}
+                @include response(xs) {margin-top: 2rem; display: block;}
                 .comp-photo {
                     width: 50%;
                     border-radius: 2px;
