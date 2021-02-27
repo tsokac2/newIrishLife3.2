@@ -2,8 +2,6 @@
     padding: 0;
     margin-top:14rem;
     @include response(sm) {margin-top: 14rem;}
-    // @include response(md) {margin-top: 22rem;}
-    // @include response(lg) {margin-top: 16rem;}
     .quote{
         font-family: 'Merienda', cursive;
         color: rgb(29, 35, 51);
@@ -37,11 +35,9 @@
     .intro-pitch {
         background-color: rgba(134, 193, 191, .4);
         margin: 1rem 0;
-
         .pitch-wrap {
             padding: 1rem 0;
             position: relative;
-
             h4 {
                 font-family: $lato;
                 font-size: 1.5rem;
@@ -78,11 +74,10 @@
                 @include response(sm) {font-size: 2rem;}
                 @include response(lg) {font-size: 2.1rem; margin: 1.5rem 0;}
             }
-
             .composition {
                 @include response(xxs-max) {display: none;}
                 @include response(xxs) {display: none;}
-                @include response(xs) { margin-top: 2rem; display: block;}
+                @include response(xs) { margin-top:2rem; display: block;}
                 .comp-photo {
                     width: 50%;
                     border-radius: 2px;
@@ -97,11 +92,8 @@
                     @include response(sm) {width: 30%;}
                     @include response(md) {width: 40%;}
                 }
-
-                
                 .o {
                     margin-left: 5%;
-                   
                     @include response(sm) {margin-left: 25%;}
                     @include response(md) {margin-left: 20%;}
                 }
@@ -109,29 +101,24 @@
                 .t {
                     margin-top: -40%;
                     margin-left: 45%;
-                   
                     @include response(sm) {margin-top: -25%; margin-left: 45%; }
                     @include response(md) {margin-top: -30%; margin-left: 45%; }
                 }
-
                 .te {
                     margin-left: 30%;
                     margin-top: -30%;
-                   
                     @include response(sm) {margin-top: -20%; margin-left: 35%; }
                     @include response(md) {margin-top: -30%; margin-left: 30%; }
                 }
             }
             .overview {
                 padding-top: 1rem;
-               
                 .sec-wrap {
                     margin-top: 2rem;
                     padding-top: 1rem;
                     background-color: #fff;
                     border: 1px solid rgba(5,65,68, 0.2);
                     border-top: 2px solid $green-color;
-                    
                     .ic-wrap{
                         display: flex;
                         align-items: center;
@@ -141,7 +128,6 @@
                         height: 3.3rem;
                         font-size: 2.5rem;
                         border-bottom: 1px solid $green-color;
-                        
                         i {
                             color: rgb(5, 65, 68);
                             margin-bottom: 2rem;
@@ -149,7 +135,6 @@
                         }
                         @include response(sm) {font-size: 3.5rem;}
                     }
-
                     h2 {
                         font-size: 1.5rem;
                         font-weight: 700;
@@ -159,7 +144,6 @@
                         margin-top: 1rem;
                         @include response(sm) {font-size: 2.5rem;}
                     }
-
                     p {
                         margin-top: 1rem;
                         font-size: 1rem;
@@ -197,7 +181,6 @@
               margin: 0 auto;
               @include response(sm) {width: 45%;}
           }
-
           .card-heading {
             font-family: $lato;
             font-size: 2rem;
