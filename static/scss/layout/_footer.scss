@@ -24,18 +24,15 @@
                 padding: 1rem 0;
                 
             }
-
             @include response(sm) {
                 width: 6.5rem;
                 padding: 1rem 0;
                 font-size: 1.5rem;
             }
-
             @include response(md) {
                 width: 10rem;
                 font-size: 2rem;
             }
-
             &:hover {
                 background-color:  rgba(84, 85, 136, .6);
                 transition: .5s ease;
@@ -57,7 +54,6 @@
     margin-top: 1.5rem;
     padding: .5rem;
     background-color: rgb(255, 255, 255);
-
     h2 {
         font-size: 1.5rem;
         font-weight: bold;
@@ -157,7 +153,6 @@
         }
     }
 }
-
  .social {
     font-family: $lato;
     margin-top: .5rem;
@@ -224,7 +219,6 @@
       }
     }
   } 
-
 .copy-ts {
     font-family: $lato;
     font-size:1rem;

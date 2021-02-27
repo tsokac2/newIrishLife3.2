@@ -1,9 +1,9 @@
 .section-home {
     padding: 0;
-    margin-top:17rem;
-    @include response(sm) {margin-top: 20rem;}
-    @include response(md) {margin-top: 22rem;}
-    @include response(lg) {margin-top: 16rem;}
+    margin-top:14rem;
+    @include response(sm) {margin-top: 14rem;}
+    // @include response(md) {margin-top: 22rem;}
+    // @include response(lg) {margin-top: 16rem;}
     .quote{
         font-family: 'Merienda', cursive;
         color: rgb(29, 35, 51);
